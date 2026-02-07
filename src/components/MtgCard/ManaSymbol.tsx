@@ -141,11 +141,12 @@ const PHYREXIAN_MANA: Record<string, { bg: string; vector: string; inset: string
 interface ManaSymbolProps {
   symbol: string
   size?: number
+  margin?: number
 }
 
-export default function ManaSymbol({ symbol, size = 32 }: ManaSymbolProps) {
+export default function ManaSymbol({ symbol, size = 32, margin = 0 }: ManaSymbolProps) {
   const s = symbol.toUpperCase()
-  const sizeStyle = { width: size, height: size }
+  const sizeStyle = { width: size, height: size, marginBottom:  margin}
 
   // Phyrexian mana (e.g. "W/P", "U/P")
   if (PHYREXIAN_MANA[s]) {

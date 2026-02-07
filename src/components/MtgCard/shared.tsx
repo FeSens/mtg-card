@@ -100,12 +100,12 @@ export function getThemeVars(theme: CardColorTheme) {
 }
 
 /** Parse rules text, replacing {T}, {G}, {1}, {W/U} etc. with inline ManaSymbol components */
-export function parseRulesText(text: string, size = 18): ReactNode[] {
+export function parseRulesText(text: string, size = 22): ReactNode[] {
   const parts = text.split(/(\{[^}]+\})/)
   return parts.map((part, i) => {
     const match = part.match(/^\{([^}]+)\}$/)
     if (match) {
-      return <ManaSymbol key={i} symbol={match[1]} size={size} />
+      return <ManaSymbol key={i} symbol={match[1]} size={size} margin={4} />
     }
     return part
   })

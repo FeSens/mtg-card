@@ -7,28 +7,28 @@ export interface CardColorTheme {
 }
 
 const COLOR_THEMES: Record<string, CardColorTheme> = {
-  W: { card: '#DBCFAC', nameType: '#F2F1EF', text: '#F2F2F1', border: '#F6FCFC', legendFilter: 'saturate(0) brightness(1.6)' },
-  U: { card: '#3B90B9', nameType: '#A9CCE5', text: '#D2E4F4', border: '#1971CE', legendFilter: 'hue-rotate(200deg) saturate(1.2)' },
-  B: { card: '#323232', nameType: '#BAB4B5', text: '#DFDEDE', border: '#403232', legendFilter: 'saturate(0.3) brightness(0.35)' },
-  R: { card: '#BB5540', nameType: '#FFE0D3', text: '#FFEAE2', border: '#C5432B', legendFilter: 'none' },
-  G: { card: '#718971', nameType: '#CFDDCD', text: '#E2E5E0', border: '#324F33', legendFilter: 'hue-rotate(100deg) saturate(0.9)' },
-  gold: { card: '#CBA74C', nameType: '#DCBB78', text: '#FCF4DF', border: '#D9CC71', legendFilter: 'hue-rotate(30deg) saturate(1.3) brightness(1.1)' },
-  artifact: { card: '#969EA3', nameType: '#D5DAE1', text: '#DFE3E4', border: '#F0F3F5', legendFilter: 'saturate(0.15) brightness(1.1)' },
-  colorless: { card: '#969EA3', nameType: '#DFDEDE', text: '#DFDEDE', border: '#E7E8E2', legendFilter: 'saturate(0.1) brightness(1.2)' },
+  W: { card: '#DBCFAC', nameType: '#F2F1EFF2', text: '#F2F2F1E7', border: '#F6FCFC', legendFilter: 'saturate(0) brightness(1.6)' },
+  U: { card: '#3B90B9', nameType: '#A9CCE5F2', text: '#D2E4F4E7', border: '#1971CE', legendFilter: 'hue-rotate(200deg) saturate(1.2)' },
+  B: { card: '#323232', nameType: '#BAB4B5F2', text: '#DFDEDEE7', border: '#403232', legendFilter: 'saturate(0.3) brightness(0.35)' },
+  R: { card: '#BB5540', nameType: '#FFE0D3F2', text: '#FFEAE2E7', border: '#C5432B', legendFilter: 'none' },
+  G: { card: '#718971', nameType: '#CFDDCDF2', text: '#E2E5E0E7', border: '#324F33', legendFilter: 'hue-rotate(100deg) saturate(0.9)' },
+  gold: { card: '#CBA74C', nameType: '#DCBB78F2', text: '#FCF4DFE7', border: '#D9CC71', legendFilter: 'hue-rotate(30deg) saturate(1.3) brightness(1.1)' },
+  artifact: { card: '#969EA3', nameType: '#D5DAE1F2', text: '#DFE3E4E7', border: '#F0F3F2', legendFilter: 'saturate(0.15) brightness(1.1)' },
+  colorless: { card: '#969EA3', nameType: '#DFDEDEF2', text: '#DFDEDEE7', border: '#E7E8E2', legendFilter: 'saturate(0.1) brightness(1.2)' },
 }
 
 /** Per-pair text box colors for dual-color gold cards (from Figma styles) */
 const DUAL_TEXT_COLORS: Record<string, string> = {
-  WU: '#E8EDF5', UW: '#E8EDF5',
-  WB: '#E8E4E2', BW: '#E8E4E2',
-  WR: '#FFFFFF', RW: '#FFFFFF',
-  WG: '#EDF0E8', GW: '#EDF0E8',
-  UB: '#D8DDE8', BU: '#D8DDE8',
-  UR: '#E8DDED', RU: '#E8DDED',
-  UG: '#D8E8E4', GU: '#D8E8E4',
-  BR: '#E8D8D8', RB: '#E8D8D8',
-  BG: '#DDE4D8', GB: '#DDE4D8',
-  RG: '#F0E8D8', GR: '#F0E8D8',
+  WU: '#E8EDF5E7', UW: '#E8EDF5E7',
+  WB: '#E8E4E2E7', BW: '#E8E4E2E7',
+  WR: '#FFFFFFE7', RW: '#FFFFFFE7',
+  WG: '#EDF0E8E7', GW: '#EDF0E8E7',
+  UB: '#D8DDE8E7', BU: '#D8DDE8E7',
+  UR: '#E8DDEDE7', RU: '#E8DDEDE7',
+  UG: '#D8E8E4E7', GU: '#D8E8E4E7',
+  BR: '#E8D8D8E7', RB: '#E8D8D8E7',
+  BG: '#DDE4D8E7', GB: '#DDE4D8E7',
+  RG: '#F0E8D8E7', GR: '#F0E8D8E7',
 }
 
 const WUBRG = new Set(['W', 'U', 'B', 'R', 'G'])
