@@ -6,6 +6,9 @@ import { getColorTheme, type CardColorTheme } from './colors'
 import artistIcon from '../../assets/artist-icon.svg'
 import setSymbolSvg from '../../assets/set-symbol.svg'
 
+// Inline SVGs shared across card types
+import edgesMaskRaw from '../../assets/edges-mask.svg?raw'
+
 // Frame background textures
 import bgWhite from '../../assets/bgWhite.webp'
 import bgBlue from '../../assets/bgBlue.webp'
@@ -68,6 +71,14 @@ export function getTextureUrl(manaCost: string[], frame?: string): string {
 /** Inline SVG helper — renders raw SVG as DOM so CSS custom properties inherit */
 export function Svg({ html, className, style }: { html: string; className?: string; style?: CSSProperties }) {
   return <div className={className} style={style} dangerouslySetInnerHTML={{ __html: html }} />
+}
+
+/** Dark drop shadow on the left edge of the card border (edges-mask.svg from Figma) */
+export function DropShadow({ className, style }: {
+  className: string
+  style?: CSSProperties
+}) {
+  return <Svg html={edgesMaskRaw} className={className} style={style} />
 }
 
 /** Derive theme + texture from mana cost */

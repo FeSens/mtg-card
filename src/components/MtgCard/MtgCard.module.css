@@ -120,6 +120,13 @@
   pointer-events: none;
 }
 
+/* 4c. Drop shadow (dark shadow on left edge of border) */
+.dropShadow {
+  position: absolute;
+  inset: 3.53% 84.30% 7.15% 3.57%;
+  pointer-events: none;
+}
+
 /* Legendary: clip the standard edges' top bulge to prevent double-border */
 .edgesBorderLegendary {
   clip-path: inset(8% 0 0 0);

@@ -2,7 +2,7 @@ import type { CSSProperties } from 'react'
 import type { StandardCardProps } from './types'
 import styles from './MtgCard.module.css'
 import ManaSymbol from './ManaSymbol'
-import { Svg, useCardTheme, getThemeVars, ManaCostRow, SetSymbolIcon, Metadata, Copyright, parseRulesText } from './shared'
+import { Svg, DropShadow, useCardTheme, getThemeVars, ManaCostRow, SetSymbolIcon, Metadata, Copyright, parseRulesText } from './shared'
 
 // Inline SVGs (rendered as DOM nodes so CSS custom properties inherit)
 import coloredBgRaw from '../../assets/colored-bg.svg?raw'
@@ -65,6 +65,7 @@ export default function StandardCard({
       {/* 4. Edge border decorations */}
       <Svg html={edgesBorderRaw} className={`${styles.edgesBorder}${legendary ? ` ${styles.edgesBorderLegendary}` : ''}`} style={borderVars} />
       <Svg html={edgesShadowRaw} className={`${styles.edgesShadow}${legendary ? ` ${styles.edgesShadowLegendary}` : ''}`} style={borderVars} />
+      <DropShadow className={styles.dropShadow} style={borderVars} />
 
       {/* 4b. Legendary frame overlay */}
       {legendary && (
