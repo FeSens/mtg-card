@@ -1,0 +1,10 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 100 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="borderColor">
+<mask id="mask0_0_535" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="23">
+<rect id="mask" width="100" height="23" transform="matrix(1 0 0 -1 0 23)" fill="var(--fill-0, #C4C4C4)"/>
+</mask>
+<g mask="url(#mask0_0_535)">
+<ellipse id="border" cx="50.0001" cy="29" rx="47.1702" ry="27.6451" fill="var(--fill-0, #C5432B)"/>
+</g>
+</g>
+</svg>

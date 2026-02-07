@@ -1,0 +1,461 @@
+/* ============================================================
+   Saga Card — 672 x 936 px
+   All positions derived from Figma design tokens.
+   ============================================================ */
+
+.fill {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+}
+
+.card {
+  position: relative;
+  width: 672px;
+  height: 936px;
+  font-family: 'Beleren', serif;
+  overflow: hidden;
+}
+
+.borderBlack {
+  position: absolute;
+  inset: 0;
+  background: #17140f;
+  border-radius: 30px;
+}
+
+/* Frame texture + colored overlay */
+.textureBg {
+  position: absolute;
+  inset: 2.56% 3.57% 6.62% 3.57%;
+  overflow: hidden;
+  clip-path: path('M0 32C0 20.7989 0 15.1984 2.17987 10.9202C4.09734 7.15695 7.15695 4.09734 10.9202 2.17987C15.1984 0 20.7989 0 32 0H592C603.201 0 608.802 0 613.08 2.17987C616.843 4.09734 619.903 7.15695 621.82 10.9202C624 15.1984 624 20.7989 624 32V700C624 754 624 781 613.406 801.5C604.088 819.5 589.221 834 570.94 843C550.157 853 522.955 853 468.551 853L154.951 852.5C100.705 852.4 73.5816 852.4 52.866 841.8C34.6436 832.5 19.8325 817.7 10.5512 799.4C0 778.7 0 751.6 0 697.3V32Z');
+}
+
+.textureImg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: none;
+}
+
+.coloredBg {
+  position: absolute;
+  inset: 2.56% 3.57% 6.62% 3.57%;
+  mix-blend-mode: multiply;
+}
+
+/* Text box (left side) */
+.textBox {
+  position: absolute;
+  inset: 11.32% 49.7% 15.92% 7.89%;
+}
+
+.textBoxBg {
+  position: absolute;
+  inset: 0;
+  border: 1px solid #cac9cc;
+  box-shadow:
+    inset 1px -3px 3px 0 rgba(255, 255, 255, 0.3),
+    inset -3px 3px 3px 0 rgba(85, 85, 85, 0.45);
+}
+
+/* Art area (right side) */
+.artFrame {
+  position: absolute;
+  inset: 11.32% 7.29% 15.92% 50.3%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.artImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: none;
+}
+
+.artShadow {
+  position: absolute;
+  inset: 0;
+  box-shadow:
+    inset 2px -2px 3px 0 rgba(0, 0, 0, 0.7),
+    inset -2px 2px 4px 0 rgba(0, 0, 0, 0.7);
+}
+
+/* Edge decorations */
+.edgesBorder {
+  position: absolute;
+  inset: 4.27% 5.21% 9.3% 5.36%;
+}
+
+.edgesBorderInner {
+  position: absolute;
+  inset: -0.31% -0.42%;
+}
+
+.edgesShadow {
+  position: absolute;
+  inset: 4.27% 5.21% 9.3% 5.36%;
+}
+
+/* Name / Typeline fields */
+.nameField {
+  position: absolute;
+  inset: 4.91% 5.95% 89.53% 6.1%;
+}
+
+.typelineField {
+  position: absolute;
+  inset: 84.72% 5.95% 9.72% 6.1%;
+}
+
+.fieldBgWrap {
+  position: absolute;
+  inset: -3.85% -0.34%;
+}
+
+.fieldShadow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  box-shadow:
+    inset 0 -6px 2px 0 rgba(51, 51, 51, 0.5),
+    inset 6px 0 2px 0 rgba(68, 68, 68, 0.2),
+    inset 6px -6px 2px 0 rgba(68, 68, 68, 0.2),
+    inset -2px 6px 2px 0 rgba(255, 255, 255, 0.4);
+}
+
+/* Card name text */
+.cardName {
+  position: absolute;
+  inset: 4.91% 7.29% 89.53% 8.33%;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 36px;
+  color: black;
+  line-height: normal;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Mana cost row */
+.manaCost {
+  position: absolute;
+  right: 47px;
+  top: 72px;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+
+/* Type line */
+.typeLine {
+  position: absolute;
+  inset: 84.62% 7.29% 9.83% 8.33%;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 31px;
+  color: black;
+  line-height: normal;
+  letter-spacing: -0.155px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Set symbol */
+.setSymbol {
+  position: absolute;
+  inset: 85.26% 7.59% 10.47% 83.48%;
+  overflow: visible;
+}
+
+.setSymbolInner {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 36px;
+}
+
+/* Saga banner (vertical left decoration) */
+.banner {
+  position: absolute;
+  inset: 11.75% 88.54% 17.09% 4.46%;
+}
+
+.bannerReverse {
+  position: absolute;
+  left: 2px;
+  top: 0.83px;
+  width: 13px;
+  height: 127.335px;
+}
+
+.bannerBorder {
+  position: absolute;
+  left: 0;
+  top: 63px;
+  width: 47px;
+  height: 602.092px;
+}
+
+.bannerBorderInner {
+  position: absolute;
+  inset: -0.66% -12.77% -1.33% -12.77%;
+}
+
+.bannerColumn {
+  position: absolute;
+  left: 5px;
+  top: 100.33px;
+  width: 37px;
+  height: 555.755px;
+}
+
+.bannerSpike2 {
+  position: absolute;
+  left: 18px;
+  top: 227px;
+  width: 11px;
+  height: 428px;
+}
+
+.bannerSpike2Inner {
+  position: absolute;
+  inset: -1.4% -54.55%;
+}
+
+.bannerSpike1 {
+  position: absolute;
+  left: 22px;
+  top: 227px;
+  width: 3px;
+  height: 428px;
+}
+
+.bannerSpike1Inner {
+  position: absolute;
+  inset: -0.47% -66.67%;
+}
+
+/* Chapter content area */
+.chaptersArea {
+  position: absolute;
+  left: 26px;
+  top: 106px;
+  width: 312px;
+  height: 681px;
+  overflow: hidden;
+}
+
+.chaptersInner {
+  position: absolute;
+  inset: 0 0 0 8.65%;
+}
+
+/* Reminder text */
+.reminderText {
+  position: absolute;
+  left: 13px;
+  top: 20px;
+  width: 260px;
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  font-size: 23px;
+  color: black;
+  line-height: normal;
+  letter-spacing: 0.23px;
+  white-space: pre-wrap;
+}
+
+/* Chapter steps list */
+.chapterSteps {
+  position: absolute;
+  left: -29px;
+  top: 174px;
+  width: 303px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+/* Divider between chapters */
+.chapterDivider {
+  width: 249px;
+  height: 4px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.chapterDividerInner {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 260px;
+  height: 5px;
+}
+
+/* Individual chapter row */
+.chapterRow {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* Lore step badge */
+.loreStep {
+  position: relative;
+  width: 59px;
+  height: 59px;
+  flex-shrink: 0;
+}
+
+.loreStepOuter {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 59px;
+  height: 59px;
+}
+
+.loreStepOuterInner {
+  position: absolute;
+  inset: -5.99% -3.47% -12.77% -3.47%;
+}
+
+.loreStepInner {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 51px;
+  height: 51px;
+}
+
+.loreStepInnerInner {
+  position: absolute;
+  inset: 0.91% 6.7%;
+}
+
+.loreStepText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 41px;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  font-size: 32px;
+  color: black;
+  text-align: center;
+  letter-spacing: -3.2px;
+  line-height: normal;
+}
+
+/* Chapter text */
+.chapterText {
+  width: 231px;
+  font-family: 'Merriweather', serif;
+  font-weight: normal;
+  font-size: 25px;
+  color: black;
+  line-height: normal;
+  letter-spacing: 0.25px;
+  white-space: pre-wrap;
+}
+
+.chapterText > div {
+  display: inline-flex;
+  vertical-align: middle;
+  box-shadow: none;
+}
+
+/* Metadata */
+.metadata {
+  position: absolute;
+  left: 44px;
+  bottom: 24px;
+  width: 380px;
+  height: 40px;
+  overflow: hidden;
+}
+
+.metaRow {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 20px;
+}
+
+.metaNum {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  color: #ededed;
+  letter-spacing: 1.6px;
+  white-space: nowrap;
+}
+
+.metaRarity {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  color: #ededed;
+  letter-spacing: 1.8px;
+  white-space: nowrap;
+  margin-left: 8px;
+}
+
+.metaCredit {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  color: #ededed;
+  white-space: nowrap;
+  margin-left: 8px;
+}
+
+.metaSet {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  color: #ededed;
+  letter-spacing: 1.8px;
+  white-space: nowrap;
+}
+
+.artistIcon {
+  width: 19px;
+  height: 11px;
+  margin-left: 4px;
+}
+
+.artistName {
+  font-family: 'Beleren', serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: #ededed;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* Copyright */
+.copyright {
+  position: absolute;
+  right: 39px;
+  bottom: 28px;
+  font-family: 'Merriweather', serif;
+  font-size: 12px;
+  color: #ededed;
+  white-space: nowrap;
+}

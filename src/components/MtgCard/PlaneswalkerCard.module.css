@@ -1,0 +1,420 @@
+/* ============================================================
+   Planeswalker Card — 672 x 936 px
+   All positions derived from Figma design tokens.
+   ============================================================ */
+
+.fill {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+}
+
+.card {
+  position: relative;
+  width: 672px;
+  height: 936px;
+  font-family: 'Beleren', serif;
+  overflow: hidden;
+}
+
+.borderBlack {
+  position: absolute;
+  inset: 0;
+  background: #17140f;
+  border-radius: 30px;
+}
+
+/* Frame texture + colored overlay */
+.textureBg {
+  position: absolute;
+  inset: 2.56% 3.57% 6.94% 3.57%;
+  overflow: hidden;
+  clip-path: path('M0 32C0 20.7989 0 15.1984 2.17987 10.9202C4.09734 7.15695 7.15695 4.09734 10.9202 2.17987C15.1984 0 20.7989 0 32 0H592C603.201 0 608.802 0 613.08 2.17987C616.843 4.09734 619.903 7.15695 621.82 10.9202C624 15.1984 624 20.7989 624 32V691.551C624 745.955 624 773.157 613.406 793.923C604.088 812.189 589.221 827.033 570.94 836.321C550.157 846.882 522.955 846.838 468.551 846.751L154.951 846.248C100.705 846.161 73.5816 846.118 52.866 835.534C34.6436 826.223 19.8325 811.388 10.5512 793.151C0 772.418 0 745.295 0 691.049V32Z');
+}
+
+.textureImg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: none;
+}
+
+.coloredBg {
+  position: absolute;
+  inset: 2.56% 3.57% 6.94% 3.57%;
+  mix-blend-mode: multiply;
+}
+
+/* Text box for abilities */
+.textBox {
+  position: absolute;
+  inset: 62.18% 7.14% 8.44% 10.12%;
+}
+
+.textBoxBg {
+  position: absolute;
+  inset: 0 0.2%;
+  opacity: 0.75;
+}
+
+/* Edge border */
+.edgesBorder {
+  position: absolute;
+  inset: 2.56% 4.63% 7.16% 4.76%;
+}
+
+.edgesBorderInner {
+  position: absolute;
+  inset: -0.47% -0.74% -0.24% -0.99%;
+}
+
+/* Name / Typeline fields */
+.nameField {
+  position: absolute;
+  inset: 3.31% 6.25% 91.67% 6.25%;
+}
+
+.typelineField {
+  position: absolute;
+  inset: 56.09% 6.25% 38.89% 6.25%;
+}
+
+.fieldBgWrap {
+  position: absolute;
+  inset: -4.26% -0.34%;
+}
+
+.fieldShadow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  box-shadow:
+    inset 0 -6px 2px 0 rgba(51, 51, 51, 0.5),
+    inset 6px 0 2px 0 rgba(68, 68, 68, 0.2),
+    inset 6px -6px 2px 0 rgba(68, 68, 68, 0.2),
+    inset -2px 6px 2px 0 rgba(255, 255, 255, 0.4);
+}
+
+/* Card art — visible window from name field to type line */
+.artFrame {
+  position: absolute;
+  inset: 3.31% 5.71% 42.09% 5.51%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.artImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: none;
+}
+
+.artShadow {
+  position: absolute;
+  inset: 0;
+  box-shadow:
+    inset 2px -2px 3px 0 rgba(0, 0, 0, 0.7),
+    inset -2px 2px 4px 0 rgba(0, 0, 0, 0.7);
+}
+
+/* Card name text */
+.cardName {
+  position: absolute;
+  inset: 2.99% 6.99% 91.45% 8.63%;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 36px;
+  color: black;
+  line-height: normal;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Mana cost row */
+.manaCost {
+  position: absolute;
+  inset: 3.95% 7.51% 92.63% 30.43%;
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* Type line */
+.typeLine {
+  position: absolute;
+  inset: 55.88% 6.99% 38.57% 8.63%;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 32px;
+  color: black;
+  line-height: normal;
+  letter-spacing: -0.16px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Set symbol */
+.setSymbol {
+  position: absolute;
+  inset: 56.41% 8.63% 39.32% 82.44%;
+  overflow: visible;
+}
+
+.setSymbolInner {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 36px;
+}
+
+/* Ability rows */
+.abilitiesArea {
+  position: absolute;
+  inset: 62.18% 7.14% 8.44% 4.61%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.abilityRow {
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+  gap: 0;
+}
+
+/* Loyalty badge (plus/minus) */
+.loyaltyBadge {
+  position: relative;
+  width: 82px;
+  height: 51px;
+  flex-shrink: 0;
+}
+
+.loyaltyBadgeOuter {
+  position: absolute;
+  inset: 0.16% 11.25% 0 0;
+}
+
+.loyaltyBadgeOuterInner {
+  position: absolute;
+  inset: -12.02% -15.75% -36.06% -15.27%;
+}
+
+.loyaltyBadgeInner {
+  position: absolute;
+  inset: 17.86% 20.92% 11.37% 11.25%;
+}
+
+.loyaltyBadgeInnerInner {
+  position: absolute;
+  inset: -8.48% -3.26% -2.83% -3.27%;
+}
+
+.loyaltyBadgeCost {
+  position: absolute;
+  inset: 26.18% 28.75% 13.45% 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Baskerville', serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  letter-spacing: -1.2px;
+  line-height: normal;
+}
+
+.loyaltyBadgeColon {
+  position: absolute;
+  inset: 25.14% 0 14.49% 91.25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Baskerville', serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #17140f;
+  text-align: center;
+  letter-spacing: -1.2px;
+  line-height: normal;
+}
+
+/* Minus badge is flipped vertically */
+.loyaltyBadgeMinus .loyaltyBadgeOuter,
+.loyaltyBadgeMinus .loyaltyBadgeInner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loyaltyBadgeMinus .loyaltyBadgeOuter {
+  inset: 0 11.25% 0.16% 0;
+}
+
+.loyaltyBadgeMinusFlip {
+  transform: scaleY(-1);
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.loyaltyBadgeMinus .loyaltyBadgeCost {
+  inset: 15.07% 28.75% 25.75% 15%;
+}
+
+.loyaltyBadgeMinus .loyaltyBadgeColon {
+  inset: 14.05% 0 26.77% 91.25%;
+}
+
+/* Ability text */
+.abilityText {
+  flex: 1;
+  font-family: 'Merriweather', serif;
+  font-weight: normal;
+  font-size: 22px;
+  color: black;
+  line-height: normal;
+  padding: 4px 8px;
+}
+
+.abilityText > div {
+  display: inline-flex;
+  vertical-align: middle;
+  box-shadow: none;
+}
+
+/* Loyalty counter (bottom-right) */
+.loyaltyCounter {
+  position: absolute;
+  inset: 88.78% 4.91% 4.7% 80.51%;
+}
+
+.loyaltyOuter {
+  position: absolute;
+  inset: 0 0 0.09% 0;
+}
+
+.loyaltyOuterInner {
+  position: absolute;
+  inset: -2.75% -3.59% -9.67% -3.51%;
+}
+
+.loyaltyInner {
+  position: absolute;
+  inset: 11.39% 7.14% 9.92% 7.14%;
+}
+
+.loyaltyInnerInner {
+  position: absolute;
+  inset: -5.44% -1.1% -1.88% -0.92%;
+}
+
+.loyaltyText {
+  position: absolute;
+  inset: 19.58% 28.06% 24.68% 27.04%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Baskerville', serif;
+  font-weight: 600;
+  font-size: 36px;
+  color: white;
+  text-align: center;
+  letter-spacing: -1.8px;
+  line-height: normal;
+}
+
+/* Darker separator in textbox */
+.textBoxDarker {
+  position: absolute;
+  inset: 33.2% 0.02% 33.6% 0;
+  background: black;
+  opacity: 0.08;
+}
+
+/* Metadata */
+.metadata {
+  position: absolute;
+  left: 47px;
+  bottom: 24px;
+  width: 380px;
+  height: 40px;
+  overflow: hidden;
+}
+
+.metaRow {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 20px;
+}
+
+.metaNum {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  color: #ededed;
+  letter-spacing: 1.6px;
+  white-space: nowrap;
+}
+
+.metaRarity {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  color: #ededed;
+  letter-spacing: 1.8px;
+  white-space: nowrap;
+  margin-left: 8px;
+}
+
+.metaCredit {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  color: #ededed;
+  white-space: nowrap;
+  margin-left: 8px;
+}
+
+.metaSet {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  color: #ededed;
+  letter-spacing: 1.8px;
+  white-space: nowrap;
+}
+
+.artistIcon {
+  width: 19px;
+  height: 11px;
+  margin-left: 4px;
+}
+
+.artistName {
+  font-family: 'Beleren', serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: #ededed;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* Copyright */
+.copyright {
+  position: absolute;
+  right: 35px;
+  bottom: 24px;
+  font-family: 'Merriweather', serif;
+  font-size: 12px;
+  color: #ededed;
+  white-space: nowrap;
+}

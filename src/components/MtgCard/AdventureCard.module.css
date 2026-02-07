@@ -1,0 +1,133 @@
+/* ============================================================
+   Adventure Card — Split text box layout
+   Left: adventure spell | Right: creature rules + flavor
+   Positions derived from Figma node 559:9702
+   ============================================================ */
+
+/* Split text box container (replaces .rulesArea) */
+.splitBox {
+  position: absolute;
+  left: 52px;
+  top: 590px;
+  right: 50px;
+  bottom: 82px;
+  display: flex;
+  gap: 0;
+  overflow: hidden;
+}
+
+/* Left: adventure spell section */
+.adventureSide {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 10px 8px 10px;
+  border-right: 2px solid rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.adventureHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2px;
+}
+
+.adventureName {
+  font-family: 'Beleren', serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: black;
+  line-height: normal;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.adventureManaCost {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.adventureTypeLine {
+  font-family: 'Beleren', serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+  line-height: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+
+.adventureRules {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  font-weight: normal;
+  font-size: 20px;
+  color: black;
+  line-height: normal;
+  letter-spacing: -0.1px;
+  white-space: pre-wrap;
+}
+
+.adventureRules > div {
+  display: inline-flex;
+  vertical-align: middle;
+  box-shadow: none;
+}
+
+/* Right: creature rules + flavor section */
+.creatureSide {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 10px;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.creatureRules {
+  width: 100%;
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  font-weight: normal;
+  font-size: 20px;
+  color: black;
+  line-height: normal;
+  letter-spacing: -0.1px;
+  white-space: pre-wrap;
+}
+
+.creatureRules > div {
+  display: inline-flex;
+  vertical-align: middle;
+  box-shadow: none;
+}
+
+.flavorBar {
+  width: 90%;
+  height: 2px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.flavorBarInner {
+  position: absolute;
+  inset: -50% -0.19% 0 -0.19%;
+}
+
+.creatureFlavor {
+  width: 100%;
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  font-size: 20px;
+  color: black;
+  line-height: normal;
+  letter-spacing: -0.1px;
+  white-space: pre-wrap;
+}

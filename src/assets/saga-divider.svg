@@ -1,0 +1,38 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 595 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="card name / background">
+<g filter="url(#filter0_iiii_0_760)">
+<path d="M11.9663 2H583.034C583.034 2 593 11 593 28C593 45 583.034 54 583.034 54H11.9663C11.9663 54 2 45 2 28C2 11 11.9663 2 11.9663 2Z" fill="var(--fill-0, #A9CCE5)"/>
+</g>
+<path d="M583.418 1L583.704 1.25781L583.034 2C583.704 1.25805 583.705 1.25841 583.705 1.25879L583.708 1.26172C583.71 1.26365 583.713 1.26649 583.717 1.26953C583.723 1.27553 583.732 1.28368 583.743 1.29395C583.766 1.31492 583.798 1.34518 583.838 1.38379C583.918 1.46114 584.034 1.57394 584.178 1.72168C584.466 2.01706 584.872 2.45289 585.355 3.02734C586.323 4.17633 587.606 5.8824 588.886 8.12988C591.447 12.6277 594 19.2969 594 28C594 36.7031 591.447 43.3723 588.886 47.8701C587.606 50.1176 586.323 51.8237 585.355 52.9727C584.872 53.5471 584.466 53.9829 584.178 54.2783C584.034 54.4261 583.918 54.5389 583.838 54.6162C583.798 54.6548 583.766 54.6851 583.743 54.7061C583.732 54.7163 583.723 54.7245 583.717 54.7305C583.713 54.7335 583.71 54.7364 583.708 54.7383L583.705 54.7412L583.034 54L583.704 54.7422L583.418 55H11.582L11.2959 54.7422L11.9658 54C11.2958 54.7419 11.2953 54.7416 11.2949 54.7412L11.292 54.7383C11.2899 54.7364 11.2865 54.7335 11.2832 54.7305C11.2767 54.7245 11.2679 54.7163 11.2568 54.7061C11.2343 54.6851 11.2023 54.6548 11.1621 54.6162C11.0815 54.5389 10.9664 54.4261 10.8223 54.2783C10.5341 53.9829 10.1284 53.5471 9.64453 52.9727C8.67683 51.8237 7.39422 50.1176 6.11426 47.8701C3.55273 43.3723 1 36.7031 1 28C1 19.2969 3.55273 12.6277 6.11426 8.12988C7.39422 5.8824 8.67683 4.17633 9.64453 3.02734C10.1284 2.45289 10.5341 2.01706 10.8223 1.72168C10.9664 1.57394 11.0815 1.46114 11.1621 1.38379C11.2023 1.34518 11.2343 1.31492 11.2568 1.29395C11.2679 1.28368 11.2767 1.27553 11.2832 1.26953C11.2865 1.26649 11.2899 1.26365 11.292 1.26172L11.2949 1.25879C11.2953 1.25841 11.2958 1.25806 11.9658 2L11.2959 1.25781L11.582 1H583.418Z" stroke="var(--stroke-0, black)" stroke-width="2"/>
+</g>
+<defs>
+<filter id="filter0_iiii_0_760" x="-2" y="-2" width="599" height="60" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="-6"/>
+<feGaussianBlur stdDeviation="1"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.2 0 0 0 0 0.2 0 0 0 0 0.2 0 0 0 0.5 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_0_760"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="6"/>
+<feGaussianBlur stdDeviation="1"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.266667 0 0 0 0 0.266667 0 0 0 0 0.266667 0 0 0 0.2 0"/>
+<feBlend mode="normal" in2="effect1_innerShadow_0_760" result="effect2_innerShadow_0_760"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="6" dy="-6"/>
+<feGaussianBlur stdDeviation="1"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.266667 0 0 0 0 0.266667 0 0 0 0 0.266667 0 0 0 0.2 0"/>
+<feBlend mode="normal" in2="effect2_innerShadow_0_760" result="effect3_innerShadow_0_760"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="-2" dy="6"/>
+<feGaussianBlur stdDeviation="1"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0"/>
+<feBlend mode="lighten" in2="effect3_innerShadow_0_760" result="effect4_innerShadow_0_760"/>
+</filter>
+</defs>
+</svg>
