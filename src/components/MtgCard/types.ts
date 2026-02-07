@@ -8,6 +8,7 @@ export interface MtgCardBaseProps {
   totalCards?: string
   rarity?: string
   setCode?: string
+  setSymbolUrl?: string
   language?: string
   artist?: string
   year?: string

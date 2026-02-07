@@ -74,6 +74,7 @@ export default function PlaneswalkerCard({
   totalCards,
   rarity,
   setCode,
+  setSymbolUrl,
   language,
   artist,
   year,
@@ -135,6 +136,9 @@ export default function PlaneswalkerCard({
         className={styles.setSymbol}
         innerClassName={styles.setSymbolInner}
         fillClassName={styles.fill}
+        setCode={setCode}
+        rarity={rarity}
+        setSymbolUrl={setSymbolUrl}
       />
 
       {/* 12. Loyalty abilities */}

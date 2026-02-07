@@ -38,6 +38,7 @@ export default function AdventureCard({
   totalCards,
   rarity,
   setCode,
+  setSymbolUrl,
   language,
   artist,
   year,
@@ -111,6 +112,9 @@ export default function AdventureCard({
         className={styles.setSymbol}
         innerClassName={styles.setSymbolInner}
         fillClassName={styles.fill}
+        setCode={setCode}
+        rarity={rarity}
+        setSymbolUrl={setSymbolUrl}
       />
 
       {/* 12. Split text box: adventure (left) + creature (right) */}

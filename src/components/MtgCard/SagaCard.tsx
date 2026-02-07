@@ -60,6 +60,7 @@ export default function SagaCard({
   totalCards,
   rarity,
   setCode,
+  setSymbolUrl,
   language,
   artist,
   year,
@@ -154,6 +155,9 @@ export default function SagaCard({
         className={styles.setSymbol}
         innerClassName={styles.setSymbolInner}
         fillClassName={styles.fill}
+        setCode={setCode}
+        rarity={rarity}
+        setSymbolUrl={setSymbolUrl}
       />
 
       {/* 13. Chapter content */}

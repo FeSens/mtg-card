@@ -122,14 +122,32 @@ export function ManaCostRow({ manaCost, className }: { manaCost: string[]; class
   )
 }
 
+/** Build a jsdelivr CDN URL for a set symbol SVG from mtg-vectors */
+const RARITY_MAP: Record<string, string> = {
+  common: 'C', uncommon: 'U', rare: 'R', mythic: 'M',
+}
+
+export function getSetSymbolUrl(setCode: string, rarity?: string): string {
+  const code = setCode.toUpperCase()
+  const file = (rarity && RARITY_MAP[rarity.toLowerCase()]) || rarity?.toUpperCase() || 'R'
+  return `https://cdn.jsdelivr.net/gh/Investigamer/mtg-vectors@main/svg/optimized/set/${code}/${file}.svg`
+}
+
 /** Set symbol icon */
-export function SetSymbolIcon({ className, innerClassName, fillClassName }: {
+export function SetSymbolIcon({ className, innerClassName, fillClassName, setCode, rarity, setSymbolUrl }: {
   className: string; innerClassName: string; fillClassName: string
+  setCode?: string; rarity?: string; setSymbolUrl?: string
 }) {
+  const src = setSymbolUrl
+    ? setSymbolUrl
+    : setCode
+      ? getSetSymbolUrl(setCode, rarity)
+      : setSymbolSvg
+
   return (
     <div className={className}>
       <div className={innerClassName}>
-        <img src={setSymbolSvg} alt="" className={fillClassName} />
+        <img src={src} alt="" className={fillClassName} />
       </div>
     </div>
   )

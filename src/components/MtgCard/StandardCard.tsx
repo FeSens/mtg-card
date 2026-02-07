@@ -36,6 +36,7 @@ export default function StandardCard({
   totalCards,
   rarity,
   setCode,
+  setSymbolUrl,
   language,
   artist,
   year,
@@ -111,6 +112,9 @@ export default function StandardCard({
         className={styles.setSymbol}
         innerClassName={styles.setSymbolInner}
         fillClassName={styles.fill}
+        setCode={setCode}
+        rarity={rarity}
+        setSymbolUrl={setSymbolUrl}
       />
 
       {/* 12. Rules + Flavor text area OR land symbol */}

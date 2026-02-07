@@ -1,6 +1,6 @@
 export { default as MtgCard } from './MtgCard'
 export { default as ManaSymbol } from './ManaSymbol'
 export { getColorTheme } from './colors'
-export { parseRulesText, DropShadow } from './shared'
+export { parseRulesText, DropShadow, getSetSymbolUrl } from './shared'
 export type { MtgCardProps, StandardCardProps, AdventureCardProps, PlaneswalkerCardProps, SagaCardProps } from './types'
 export type { CardColorTheme } from './colors'
