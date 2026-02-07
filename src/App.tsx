@@ -4,45 +4,25 @@ import './App.css'
 function App() {
   return (
     <div className="app">
-      {/* Standard: Noncreature Spell (Enchantment, no P/T) */}
-      <div className="card-showcase">
-        <h3>Standard — Noncreature</h3>
-        <MtgCard
-          cardName="Control The Narrative"
-          cardArt="public/Control_The_Narrative.png"
-          manaCost={['0', 'W','B']}
-          typeLine="Enchantment"
-          rulesText="As Control The Narrative enters, choose two creature types.
-Creatures of the first chosen type have protection from creatures of the second chosen type."
-          flavorText="The Glimmer-Barge logs told stories the Synod refused to read. When the Unforged finally spoke, the chamber had already adjourned—permanently. — Sealed Testimony, Vault Record ██████"
-          cardNumber="1"
-          totalCards="291"
-          rarity="R"
-          setCode="EMA"
-          language="EN"
-          artist="Nano Banana 3 Pro"
-          year="2026"
-        />
-      </div>
-
       {/* Standard: Creature (with P/T) */}
       <div className="card-showcase">
         <h3>Standard — Creature</h3>
         <MtgCard
           cardName="Llanowar Elves"
+          cardArt='public/Llanowar-Elves-MtG-Art.jpg'
           manaCost={['G']}
           typeLine="Creature — Elf Druid"
           rulesText="{T}: Add {G}."
-          flavorText="One branch to swing from, one to point the way, one to gather food, one to fight with."
+          flavorText="As patient and generous as life, as harsh and merciless as nature."
           power="1"
           toughness="1"
-          cardNumber="168"
-          totalCards="291"
+          cardNumber="101"
+          totalCards="136"
           rarity="C"
-          setCode="EMA"
+          setCode="GN3"
           language="EN"
-          artist="AI Artist"
-          year="2026"
+          artist="Chris Rahn"
+          year="2022"
         />
       </div>
 

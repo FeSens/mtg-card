@@ -176,7 +176,7 @@ export function Metadata({
           )}
         </span>
         {rarity && <span className={rarityClassName}>{rarity}</span>}
-        <span className={creditClassName}>Made by Felipe Bonetto</span>
+        <span className={creditClassName}>npm install mtg-card</span>
       </div>
       <div className={rowClassName}>
         <span className={setClassName}>
