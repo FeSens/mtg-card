@@ -4,6 +4,8 @@ A React component that renders pixel-perfect Magic: The Gathering cards entirely
 
 ![Card showcase](showcase.png)
 
+**[Live Demo](https://fesens.github.io/mtg-card/)**
+
 ## Why this library?
 
 - **Zero card-frame images** — Every part of the card frame (borders, fields, edges, P/T box) is an inline SVG themed with CSS custom properties. Colors adapt automatically to the mana cost.
